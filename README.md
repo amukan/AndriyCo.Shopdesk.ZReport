@@ -1,6 +1,5 @@
 # Опис структури касового підсумкового звіту (Z звіту)
 
-
 Підсумковий (дений, Z) звіт створюється касою в кінці зміни та включає в себе підсумкові значення за всіма торговими точками, що обслуговуються на цій касі та колекцію таких звітів по кожній з точок (окремо по фіскальній та нефіскальній касі).
 
 Приклад імені файлу підсумкового звіту:
@@ -24,7 +23,7 @@ Z_REPORT_D753_F11_P19_U1_2024-07-26_16-00-15.tcurep, де:
 |AmountOfReturnsCash             | + |Double |Сума повернень готівкою|
 |AmountOfReturnsCertificate      | + |Double |Сума повернень з оплат сертфікатами|
 |AmountOfReturnsCredit           | + |Double |Сума повернень з оплат у кредит (чеками)|
-|AmountOfSales                   | + |Double |Сума продажів до застосування бонусних знижок (продаж = сума всіх оплат), а саме: AmountOfSales = AmountOfSalesCash + AmountOfSalesCard + AmountOfSalesCredit + AmountOfSalesCertificate + AmountOfSalesBonus|
+|AmountOfSales                   | + |Double |Сума продажів до застосування бонусних знижок (продаж = сума всіх оплат), а саме: *AmountOfSales = AmountOfSalesCash + AmountOfSalesCard + AmountOfSalesCredit + AmountOfSalesCertificate + AmountOfSalesBonus*|
 |AmountOfSalesBonus              | + |Double |Сума оплат бонусами|
 |AmountOfSalesCard               | + |Double |Сума оплат картками|
 |AmountOfSalesCardOnline         | + |Double |Сума оплат картками по чекам, сплаченим онлайн|
@@ -62,7 +61,7 @@ Z_REPORT_D753_F11_P19_U1_2024-07-26_16-00-15.tcurep, де:
 |AmountOfReturnsCash             | + |Double |Сума повернень готівкою|
 |AmountOfReturnsCertificate      | + |Double |Сума повернень з оплат сертфікатами|
 |AmountOfReturnsCredit           | + |Double |Сума повернень з оплат у кредит (чеками)|
-|AmountOfSales                   | + |Double |Сума продажів до застосування бонусних знижок (продаж = сума всіх оплат), а саме: AmountOfSales = AmountOfSalesCash + AmountOfSalesCard + AmountOfSalesCredit + AmountOfSalesCertificate + AmountOfSalesBonus|
+|AmountOfSales                   | + |Double |Сума продажів до застосування бонусних знижок (продаж = сума всіх оплат), а саме: *AmountOfSales = AmountOfSalesCash + AmountOfSalesCard + AmountOfSalesCredit + AmountOfSalesCertificate + AmountOfSalesBonus*|
 |AmountOfSalesBonus              | + |Double |Сума оплат бонусами|
 |AmountOfSalesCard               | + |Double |Сума оплат картками|
 |AmountOfSalesCardOnline         | + |Double |Сума оплат картками по чекам, сплаченим онлайн|
@@ -158,7 +157,7 @@ Z_REPORT_D753_F11_P19_U1_2024-07-26_16-00-15.tcurep, де:
     <DateOfIssue>2024-07-26 16:00:15</DateOfIssue>
     <DateOfReport>2024-07-26 16:00:13</DateOfReport>
     <DateOfStart>2024-07-23 07:12:09</DateOfStart>
-    <FranchiseeId>0</FranchiseeId>
+    <FranchiseeId>11</FranchiseeId>
     <IssuedByUser>1</IssuedByUser>
     <IssuedByUserFullName>Касир</IssuedByUserFullName>
     <IssuedByUserName>Касир</IssuedByUserName>
