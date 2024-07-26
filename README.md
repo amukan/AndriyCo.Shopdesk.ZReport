@@ -70,7 +70,7 @@ Z_REPORT_D753_F11_P19_U1_2024-07-26_16-00-15.tcurep, де:
 |AmountOfSalesCredit             | + |Double |Сума оплат у кредит (чеками)|
 |AmountOfServicePayIn            | + |Double |Сума службових внесків|
 |AmountOfServicePayOut           | + |Double |Сума службових виносів|
-|ChequeFiles                     | + |String |Перелік чеків, які увійшли у поточний звіт, а саме імен файлів чеків та їх гвідів через кому у наступному форматі: ім'я чека №1:{GUID чека №1}, ім'я чека №2:{GUID чека №2}, ..., ім'я чека №N:{GUID чека №N}|
+|ChequeFiles                     | + |String |Перелік чеків, які увійшли у поточний звіт, а саме імен файлів чеків та їх GUID через кому у наступному форматі: ім'я чека №1:{GUID чека №1}, ім'я чека №2:{GUID чека №2}, ..., ім'я чека №N:{GUID чека №N}|
 |DepartmentId                    | + |Int32  |ID торгової точки|
 |FiscalRegisterFiscalNumber      | + |String |Фіскальний номер реєстратора із налаштувань ShopDesk. Для ПРРО Checkbox дані беруться безпосередньо із конфігурації ПРРО|
 |FiscalRegisterId                | + |String |Внутрішній ID фіскального реєстратора, що відповідає його моделі|
@@ -129,11 +129,11 @@ Z_REPORT_D753_F11_P19_U1_2024-07-26_16-00-15.tcurep, де:
         <AmountOfSalesCredit>0.00</AmountOfSalesCredit>
         <AmountOfServicePayIn>1093.20</AmountOfServicePayIn>
         <AmountOfServicePayOut>26006.60</AmountOfServicePayOut>
-        <ChequeFiles>(!!!Перелік скорочено. Тут мало б бути 147 пар імен та GUID!!!) 
-        	DOC_D355360_F0_P19_U1_2024-07-23_07-13-12.tcudoc:{194941A4-03A1-42F0-820D-93F79FDAEA87}, 
+        <ChequeFiles>DOC_D355360_F0_P19_U1_2024-07-23_07-13-12.tcudoc:{194941A4-03A1-42F0-820D-93F79FDAEA87}, 
         	DOC_D355361_F0_P19_U1_2024-07-23_07-14-01.tcudoc:{F3B2BF1D-FE39-45A6-95A2-64C3B5466720}, 
         	DOC_D355362_F0_P19_U1_2024-07-23_07-26-20.tcudoc:{71F8B24B-DD7B-430E-9092-5B4A40DCAA35}, 
         	DOC_D355363_F0_P19_U1_2024-07-23_07-27-21.tcudoc:{514E5319-1C1D-4F7B-947D-EB2D71CF86B9}, 
+        	(Перелік скорочено. Тут мало б бути ще 140 пар імен та GUID)
         	DOC_D355504_F0_P19_U1_2024-07-23_12-46-10.tcudoc:{05201458-A0BD-43BC-9DCF-BB61C92D5089}, 
         	DOC_PAYTRANSFER_D355359_F0_P19_U1_2024-07-23_07-12-09.tcudoc:{82C9CEC6-9169-4423-805F-8758517DB4C3}, 
         	DOC_PAYTRANSFER_D355505_F0_P19_U1_2024-07-26_15-59-32.tcudoc:{E6198DC9-B51A-4965-8F26-A404160B6A82}</ChequeFiles>
