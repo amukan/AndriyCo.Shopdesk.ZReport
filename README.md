@@ -43,6 +43,7 @@ Z_REPORT_D753_F11_P19_U1_2024-07-26_16-00-15.tcurep, де:
 |IssuedByUser                    | + |Int32  |ID користувача (касира), який випустив Z звіт|
 |IssuedByUserFullName            | + |String |Повне ім'я користувача (касира), який випустив Z звіт|
 |IssuedByUserName                | + |String |Логін користувача (касира), який випустив Z звіт|
+|LogRecords		                   | - |Колекція елементів [LogRecord](#table3)|Перелік записів журналу каси, які стосуються цього чека (див. [Таблицю 8](#table8))|
 |NumberOfReceiptsCashWithdrawals | + |Int32  |Підсумкова кількість чеків зі зняттям готівки з картки на касі|
 |NumberOfReceiptsReturn          | + |Int32  |Підсумкова кількість чеків повернень по всіх точках|
 |NumberOfReceiptsSales           | + |Int32  |Підсумкова кількість чеків продажів по всіх точках|
@@ -84,6 +85,30 @@ Z_REPORT_D753_F11_P19_U1_2024-07-26_16-00-15.tcurep, де:
 |NumberOfReceiptsServicePayIn    | + |Int32  |Підсумкова кількість чеків службових внесків|
 |NumberOfReceiptsServicePayOut   | + |Int32  |Підсумкова кількість чеків службових вилучень|
 
+## <a id="table3">Таблиця 3. Запис журналу дій касира
+
+|Ім'я елементу          |Тип даних|Опис                                 |
+|:---                   |:---     |:---                                 |
+|AppVersion             |String   |Назва та версія касового додатку     |
+|CashierId              |Int64    |ID касира                            |
+|ContractorName         |String   |Ім'я контрагента                     |
+|DepartmentBalance      |Double   |Залишок в касі                       |
+|DepartmentName         |String   |Назва торгової точки                 |
+|DocumentSlot           |String   |Номер відкладеного чеку              |
+|ErrorDescription       |String   |Опис помилки                         |
+|ErrorModule            |String   |Місце помилки                        |
+|ErrorNumber            |Int64    |Номер помилки                        |
+|GoodsItemAmount        |Double   |Сума по товару                       |
+|GoodsItemBarcode       |String   |Штрихкод товару                      |
+|GoodsItemName          |String   |Назва товару                         |
+|GoodsItemPrice         |Double   |Ціна товару                          |
+|GoodsItemQuantity      |Double   |Кількість товару                     |
+|GoodsItemQuantityReestr|Double   |Поточна кількість товару по реєстру  |
+|Id                     |Int64    |ID запису                            |
+|Info                   |String   |Додаткова інформація                 |
+|LogLevel               |Byte     |Рівень логування                     |
+|Message                |String   |Подія                                |
+|Timestamp              |DateTime |Дата та час запису у форматі UnixDate (*yyyy-MM-ddTHH:mm:ss.fff*)|
 
 # Зразок підсумкового денного звіту
 
